@@ -92,5 +92,10 @@ This project was developed in collaboration with:
 - [Delos Santos, Zeldrick Jesus]
 - [Ellorando, Rodien Jillian]
 
+Figma: https://www.figma.com/design/PzyAyRaYvVIJS3naJ8ir9n/SoftEng?node-id=0-1&node-type=canvas&t=D8BcDgdkPMB2mXfs-0
+
+Data Dictionary: https://docs.google.com/document/d/1jqgWDgl8bYcncLnvTooWo01a-c83Lg-xRxInjrDqM6E/edit?usp=sharing
+
+Presentation Slides: https://docs.google.com/presentation/d/16v_nUgIlMXX06YoBVZHAbH_FUJoPF0_YS0eJX4CIyyg/edit#slide=id.g54dda1946d_6_358
 
 All Rights Reserved 2024
