@@ -1,0 +1,296 @@
+html {
+    overflow-y: scroll;
+}
+
+body, main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    font-family: 'League Spartan', sans-serif;
+    background-color: #fff2e5;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F19447; 
+    padding: 20px;
+    text-align: center;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.logo {
+    display: flex;
+    padding: 0 30px;
+    margin-right: 20px;
+}
+
+.logo a {
+    margin-top: 3px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.5em;
+    padding-right: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.logo img {
+    height: 28px;
+    width: auto;
+    padding: 0 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+.paw-logo {
+    width: 40px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-text {
+    margin-top: 8px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #505631;
+}
+
+.logo-text span {
+    color: #DE6E27; 
+}
+
+/* Container */
+.container {
+    display: flex;
+    min-height: 100vh; 
+    background-color: #FFF0D8; 
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #F8D69B;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: width 0.3s ease; 
+    min-height: 100vh; 
+}
+
+/* Move the list downwards */
+.sidebar ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 65px; 
+}
+
+.sidebar ul li {
+    margin-bottom: 40px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #5A4A42;
+    font-weight: bold;
+    font-size: 1.5em;
+    position: relative;
+    transition: color 0.3s, transform 0.3s; 
+}
+
+.sidebar ul li a:hover {
+    color: #F19447; 
+    transform: translateY(-3px); 
+} 
+
+.sidebar-toggle {
+    background-color: transparent;
+    border: none;
+    color: #5A4A42;
+    font-size: 2em;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: absolute;  
+    top: 80px; 
+    left: 250px;
+    transition: left 0.3s ease;
+}
+
+.sidebar-toggle:hover {
+    color: #F19447;
+}
+.sidebar.collapsed .sidebar-toggle {
+    left: 60px;
+}
+.sidebar.collapsed {
+    width: 60px;
+    overflow: hidden;
+    min-height: 100vh; 
+}
+
+.sidebar.collapsed .logo-container,
+.sidebar.collapsed ul {
+    display: none; 
+}
+
+.inventory {
+    flex: 1;
+    padding: 30px;
+    background-color: #FFF0D8; 
+    padding-top: 100px;
+    min-height: 100vh; 
+}
+
+.inventory h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFCBA0;
+}
+
+.products-header h2 {
+    color: #DE6E27;
+    font-size: 2em;
+    font-weight: 700;
+    margin-left: 45px;
+}
+
+.add-product-btn {
+    margin-right: 40px;
+    background-color: #5A754D;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-product-btn:hover {
+    background-color: #4a6342;
+}
+
+/* Table Styles */
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.inventory-table th,
+.inventory-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+}
+
+.inventory-table th:nth-child(1),
+.inventory-table td:nth-child(1) {
+    width: 15%; /* Product Name */
+}
+
+.inventory-table th:nth-child(2),
+.inventory-table td:nth-child(2) {
+    width: 10%; /* Product Category */
+}
+
+.inventory-table th:nth-child(3),
+.inventory-table td:nth-child(3) {
+    width: 5%; /* Stocks */
+}
+
+.inventory-table th:nth-child(4),
+.inventory-table td:nth-child(4) {
+    width: 5%; /* Price */
+}
+
+.inventory-table th:nth-child(5),
+.inventory-table td:nth-child(5) {
+    width: 5%; /* Image */
+}
+
+.inventory-table th:nth-child(6),
+.inventory-table td:nth-child(6) {
+    width: 10%; /* Description */
+}
+
+.inventory-table th:nth-child(7),
+.inventory-table td:nth-child(7) {
+    width: 10%; /* Actions */
+}
+
+/* Styling input fields */
+.inventory-table input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+.save-btn, .edit-btn {
+    padding: 6px 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.save-btn:hover, .edit-btn:hover {
+    background-color: #218838;
+}
+
+.cancel-btn{
+    padding: 6px 12px;
+    background-color: #636363;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cancel-btn:hover{
+    background-color: #424141;
+}
+
+.inventory-table {
+    width: 100%;
+    table-layout: fixed; /* Ensures the table takes up only the necessary space */
+}
+
+.inventory-table th, .inventory-table td {
+    padding: 8px;
+    text-align: left;
+    overflow: hidden; /* Hide anything that overflows */
+    text-overflow: ellipsis; /* Show "..." for overflowing text */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.inventory-table td img {
+    width: 50px; /* Limit the image width */
+    height: auto; /* Maintain aspect ratio */
+}

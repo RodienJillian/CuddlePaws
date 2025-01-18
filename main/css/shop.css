@@ -1,0 +1,186 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    font-family: 'League Spartan', sans-serif;
+    background-color: #FFF0D8;
+}
+
+main {
+    padding: 20px;
+    margin: 3px 0;
+}
+
+.CuddlePaws {
+    padding: 20px;
+    margin: 3rem auto 5rem;
+}
+
+.CuddlePaws h3{
+    color: #d67d3e; 
+    font-size: 28px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    padding: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Pets Category */
+.pets-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 55px 0;
+}
+
+.pets-category > div {
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.pets-category > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    background-color: #ffe0b5;
+}
+
+.pets-category img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+/* Shop Sections */
+.Shop_Dog, .Shop_Cat, .Shop_smallPet, .Shop_fish {
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: #ffe5b5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Shop_Dog h2, .Shop_Cat h2, .Shop_smallPet h2, .Shop_fish h2 {
+    color: #d67d3e; 
+    font-size: 28px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    padding: 20px;
+    border-bottom: 3px solid #d67d3e; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.price {
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.product-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+    cursor: pointer;
+
+}
+
+.card {
+    background-color: #f0842c7d;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 180px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card-title {
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #f4955e; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+    padding: 0; 
+    font-size: 1.2rem;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 10px; 
+}
+
+.footer-section p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#backToTop {
+    display: none; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px; 
+    height: 80px; 
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer; 
+}
+
+#backToTop img {
+    width: 100%;
+    height: auto; 
+}
+

@@ -1,0 +1,124 @@
+html {
+    overflow-y: scroll;
+}
+
+body, main {
+    min-height: 100vh; 
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F19447; 
+    padding: 20px;
+    text-align: center;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0 30px;
+    font-size: 20px;
+
+}
+
+nav ul li {
+    margin-left: 20px;
+    gap: 10px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 18px;  
+}
+
+nav ul li a:hover {
+    text-shadow: 0 0 5px rgb(248, 241, 116), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+nav input[type="text"] {
+    padding: 5px;
+    margin-left: 20px;
+    width: 300px;
+    border-radius: 30px ;
+    font-size: 16px;
+    border: 2px solid lightgray; /* Light gray border */
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.logo{
+    display: flex;
+    padding:0 30px;
+    margin-right:20px;
+}
+
+.logo a {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.5em;
+    padding-right: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.logo a:hover {
+    text-shadow: 0 0 5px rgb(248, 241, 116), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.logo img{
+    height: 28px;
+    width: auto;
+    padding: 0 10px;
+    
+}
+
+/* FOR ALERT */
+.alert {
+    color: red;
+    padding: 10px;
+    margin: 15px 0;
+}
+.alert.success {
+    color: green;
+}
+
+/* FOR MESSAGE */
+
+.message {
+    padding: 10px; 
+    border-radius: 5px; 
+    margin: 15px 0; 
+}
+
+.message.success {
+    color: #4caf50; 
+    background-color: #e0ffe0; 
+    border: 1px solid #4caf50; 
+}
+
+.message.error {
+    color: #d9534f; 
+    background-color: #f8d7da; 
+    border: 1px solid #d9534f; 
+}

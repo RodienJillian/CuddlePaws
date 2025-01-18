@@ -1,0 +1,183 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    font-family: 'League Spartan', sans-serif;
+    background-color: #fff2e5;
+    overflow-x: hidden;
+}
+
+button {
+    background-color: #43a047;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+main{
+    padding: 7rem 2rem;
+    align-content: center;
+}
+
+/* Hero Section */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    align-items: center;
+    gap: 40px; 
+    padding: 50px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.hero img {
+    width: 400px; 
+    height: auto; 
+    border-radius: 50%; 
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover; 
+}
+
+
+.hero-text {
+    text-align: left;
+}
+
+.hero-text h1 {
+    color: #e04f30;
+}
+
+.hero-text p {
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+.hero-text button {
+    margin-top: 20px;
+    border-radius: 30px;
+    height: 50px;
+    width: 200px;
+    font-size: 1.2rem;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 5rem;
+    text-align: center;
+    background-color: white;
+}
+
+.column{
+    display:inline-flex;
+    padding: 0 0 10px 0;
+}
+
+.about-us-logo {
+    height: 60px;
+    width: auto;
+    margin: 0;
+}
+
+.about-us h2 {
+    color: #d97c30;
+    text-align : left;
+}
+
+.about-us p {
+    display: block; 
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto; 
+}
+
+
+/* Contact Section */
+.contact {
+    display: flex;
+    justify-content: center; 
+    padding: 30px;
+    background-color: #f9c290;
+    border-radius: 15px;
+    width: 450px; 
+    height: 300px; 
+    margin: 0 auto; 
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 350px; 
+    height: 100%; 
+}
+
+h3 {
+   text-align: center; 
+   padding: 8rem 0 0 0;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+    height: 140px;
+}
+
+.contact-form button {
+    background-color: #F5A460;
+    color: white;
+    box-shadow: 0 1px 1px #6c6c6c;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #f4955e; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; 
+    font-size: 1.2rem;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 10px; 
+}
+
+.footer-section p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6; 
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    font-size: 1rem;
+}
+
