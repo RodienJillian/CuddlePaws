@@ -93,4 +93,4 @@ This project was developed in collaboration with:
 - [Ellorando, Rodien Jillian]
 
 
-All Rights Reserves 2024
+All Rights Reserved 2024
