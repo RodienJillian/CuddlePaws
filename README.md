@@ -88,9 +88,9 @@ For questions or feedback, feel free to reach out:
 
 This project was developed in collaboration with:
 
-- [Bracia, Genniesys]
-- [Delos Santos, Zeldrick Jesus]
-- [Ellorando, Rodien Jillian]
+- [Bracia, Genniesys](https://github.com/Genniesysbracia)
+- [Delos Santos, Zeldrick Jesus](https://github.com/zjdelossantos)
+- [Ellorando, Rodien Jillian](https://github.com/RodienJillian)
 
 Figma: https://www.figma.com/design/PzyAyRaYvVIJS3naJ8ir9n/SoftEng?node-id=0-1&node-type=canvas&t=D8BcDgdkPMB2mXfs-0
 
